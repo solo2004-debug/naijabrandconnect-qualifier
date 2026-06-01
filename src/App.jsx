@@ -217,7 +217,7 @@ export default function App() {
       } catch(e) {
         setBrands(prev=>prev.map((b,idx)=>idx===i?{...b,status:"error",error:e.message}:b));
       }
-      if (i<list.length-1) await new Promise(r=>setTimeout(r,3500));
+      if (i<list.length-1) await new Promise(r=>setTimeout(r,4500));
     }
     setRunning(false);
   }, [input]);
